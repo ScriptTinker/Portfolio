@@ -1,0 +1,138 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+  }
+  
+  /* Navbar styling */
+  .navbar-custom {
+    background-color: #f9c74f; 
+    padding: 15px 30px;
+    border-bottom: 4px solid #ffd60a;
+    z-index: 10;
+  }
+  .navbar-custom h2 {
+    margin-bottom:0;
+    margin-top: 6px;
+  }
+  /* Sidebar */
+  .sidebar {
+    background-color: #2d3436;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h3 {
+    color: #f9c74f;
+    font-weight: 600;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: 500;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #f9c74f;
+    color: black;
+  }
+  
+  /* Main content */
+  .content-area {
+    margin-left: 270px;
+    padding: 40px;
+  }
+  
+  /* About Me Section */
+  .about-me h2 {
+    color: #2d3436;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills ul li {
+    background-color: #f9c74f;
+    margin: 5px 0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+
+  p > a {
+    color: #0a33ff;
+  }
+  
+  .email_link{
+    color:#6a4c93
+  }
+
+  @media (max-width: 768px) {
+    .navbar-custom {
+      padding: 10px 15px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+      box-shadow: none;
+    }
+  
+    .sidebar h3 {
+      text-align: center;
+    }
+  
+    .sidebar ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .sidebar ul li {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  
+    .content-area {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .profile-img {
+
+    width: 150px;
+    object-fit: cover;
+    position: relative;
+    top: 50%; 
+    left: 29%; 
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }

@@ -1,0 +1,23 @@
+{% extends "layout2.html" %}
+
+{% block content %}
+<div class="content-area">
+  <div class="container about-me">
+    <h2>Information About Me</h2>
+    <p>Hello! I'm Eduard Moraru, a passionate developer with a love for creating interactive, responsive, and innovative web apps. 
+      I specialize in data visualization with python frameworks such as Dash/Plotly and Flask and some expirience in web development.</p>
+    
+    <h3>My Skills</h3>
+    <div class="skills">
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>Power BI, Hadoop</li>
+        <li>Python (Flask, Dash,Plotly)</li>
+        <li>Databases: MySQL, MongoDB, SQLite</li>
+      </ul>
+    </div>
+    
+    <h3>Contact</h3>
+    <p>Feel free to <a href="{{ url_for('contact') }}">contact me</a> if you would like to collaborate or get in touch!</p>
+  </div>
+{% endblock content %}  
