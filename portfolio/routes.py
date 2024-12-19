@@ -1,4 +1,4 @@
-from portfolio import db,app
+from portfolio import app
 from flask import render_template
 
 @app.route("/")
@@ -13,4 +13,9 @@ def contact():
 @app.route("/projects")
 def projects():
     return render_template("projects.html")
+
+@app.route("/download_cv", methods=["GET", "POST"])
+def download_cv():
+    return render_template("download_cv.html")
+
 
