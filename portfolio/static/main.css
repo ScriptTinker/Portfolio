@@ -10,11 +10,16 @@ body {
     padding: 15px 30px;
     border-bottom: 4px solid #ffd60a;
     z-index: 10;
+    flex: auto;
+    position: fixed;
   }
   .navbar-custom h2 {
     margin-bottom:0;
     margin-top: 6px;
+    color: #2d3436;
+    text-decoration: none;
   }
+
   /* Sidebar */
   .sidebar {
     background-color: #2d3436;
@@ -54,8 +59,8 @@ body {
   
   /* Main content */
   .content-area {
-    margin-left: 270px;
-    padding: 40px;
+    margin-left: 170px;
+    margin-top: 120px;
   }
   
   /* About Me Section */
@@ -95,6 +100,7 @@ body {
   @media (max-width: 768px) {
     .navbar-custom {
       padding: 10px 15px;
+      position: relative;
     }
   
     .sidebar {
@@ -123,6 +129,7 @@ body {
     .content-area {
       margin-left: 0;
       padding: 20px;
+      margin-top: auto;
     }
   
     .profile-img {

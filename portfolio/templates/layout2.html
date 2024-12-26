@@ -17,8 +17,8 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <h2 class="navbar-brand centred">Welcome!</h2>
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <a href="{{url_for('home')}}"><h2 class="navbar-brand centred">Homepage</h2></a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown show">
@@ -39,16 +39,15 @@
     <ul>
       <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
       <li><a href="{{ url_for('projects') }}">My Projects</a></li>
-      <li><a href="{{ url_for('home') }}">Homepage</a></li>
       <li><a href="{{ url_for('download_cv') }}">Download CV</a></li>
     </ul>
   </div>
-<!-- remember to put download in the side-bar -->
 
+  <!-- Main Content -->
+  <div class="content-area main-content"> 
   {% block content %}{% endblock %}
+  </div>
 
-  
-  
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.0/dist/umd/popper.min.js"></script>
